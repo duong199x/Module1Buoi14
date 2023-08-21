@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // function showHello() {
+    //     let hello = 'xin chaof'
+    //     alert(hello)
+    // }
+    // showHello()
+    // function showF(x){
+    //     let result = x * x;
+    //     return result;
+    // }
+    // let kq = showF(10);
+    // console.log(kq)
+    // function sum(a, b) {
+    //     return a + b
+    // }
+    //
+    // console.log(sum(2, 3));
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
